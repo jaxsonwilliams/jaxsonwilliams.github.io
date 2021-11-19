@@ -10,6 +10,15 @@
   </head>
 
   <body>
+    <!-- Begin Navigation -->
+    <nav class="nav-bar top-nav" id="top-nav-bar">
+      <h1 class="logo"><a href="index.html">Jaxson Williams<a></h1>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a href="#about">About</a></li>
+        <li class="nav-item social-nav-item"><a href="https://instagram.com/jaxson.williams14" aria-label="link to instagram"><i class="fab fa-instagram" arai-hidden="true"></i></a></li>
+      </ul>
+    </nav>
     <header class="hero-box">
       <section class="hero-image-box">
         <img class="hero-image" src="img/Kanye.jpg" alt="" />
@@ -20,7 +29,7 @@
       </section>
     </header>
     <!--Begin Portfolio Gallery-->
-    <section class="portfolio-container">
+    <section class="portfolio-container section-scroll" id="portfolio">
       <h1>Portfolio</h1>
       <section class="portfolio-gallery">
         <div class="gallery-item">
@@ -76,11 +85,98 @@
               alt="Comic Portrait"
           /></a>
         </div>
-      </section>
-    </section>
+      </section><!-- end .portfolio-gallery -->
+      <h1>Foundation Portfolio</h1>
+      <section class="portfolio-gallery">
+        <div class="gallery-item">
+          <a class="glightbox" href="img/">
+            <img
+              class="gallery-img"
+              src=""
+              alt=""
+          /></a>
+        </div>
+
+        <div class="gallery-item">
+          <a class="glightbox" href="">
+            <img
+              class="gallery-img"
+              src=""
+              alt=""
+          /></a>
+        </div>
+
+        <div class="gallery-item">
+          <a class="glightbox" href="">
+            <img
+              class="gallery-img"
+              src=""
+              alt=""
+          /></a>
+        </div>
+
+        <div class="gallery-item">
+          <a class="glightbox" href="">
+            <img
+              class="gallery-img"
+              src=""
+              alt=""
+          /></a>
+        </div>
+
+        <div class="gallery-item">
+          <a class="glightbox" href="">
+            <img
+              class="gallery-img"
+              src=""
+              alt=""
+          /></a>
+        </div>
+
+        <div class="gallery-item">
+          <a class="glightbox" href="">
+            <img
+              class="gallery-img"
+              src=""
+              alt=""
+          /></a>
+        </div>
+
+        <div class="gallery-item">
+          <a class="glightbox" href="">
+            <img
+              class="gallery-img"
+              src=""
+              alt=""
+          /></a>
+        </div>
+
+        <div class="gallery-item">
+          <a class="glightbox" href="">
+            <img
+              class="gallery-img"
+              src=""
+              alt=""
+          /></a>
+        </div>
+      </section><!-- end .portfolio-gallery -->
+    </section><!-- end .portfolio-container -->
     <script src="js/glightbox.min.js"></script>
     <script type="text/javascript">
       const lightbox = GLightbox({ loop: true });
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction(){
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+      {
+        document.getElementById("top-nav-bar").style.background ="rgba(0,0,0,0.4)";
+        } else {
+          document.getElementById("top-nav-bar").style.background ="none";
+        }
+      }
     </script>
   </body>
 </html>
