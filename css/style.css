@@ -24,6 +24,7 @@ body {
   padding: 0;
   min-height: 100%;
   max-width: 100%;
+  padding-bottom: 30rem;
 }
 
 *,
@@ -227,6 +228,36 @@ img {
   transform: scale(1.5);
 }
 
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 1rem auto0 auto;
+}
+
+.about text {
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.about-text {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.about-social {
+  display: flex;
+  justify-content: start;
+}
+
+.about-social a:hover {
+  color: black;
+}
+
+.about-image img {
+  height: 100%;
+  object-fit: cover;
+}
 /* Media Queries Below*/
 
 @media (min-width: 600px) {
@@ -242,6 +273,30 @@ img {
     font-size: 3rem;
     line-height: 3rem;
     padding-left: 1rem;
+  }
+  .about-container {
+    grid-template-column: 1fr 1fr;
+    grid-gap: 4rem;
+  }
+  .about-text h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .about-text p {
+    font-size: 1.2 rem;
+    line-height: 1.6 rem;
+  }
+  .about-social a {
+    font-size: 3rem;
+  }
+  .nav-bar {
+    padding: 0 1rem;
+  }
+  .nav-menu {
+    padding: 0 1rem;
+  }
+  .nav-item {
+    flex: 1 1;
   }
 }
 
@@ -260,5 +315,34 @@ img {
   .portfolio-container h1 {
     font-size: 6rem;
     line-height: 6rem;
+  }
+
+  .about-container {
+    max-width: 1400px;
+  }
+
+  .about-text h1 {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+
+  .about-text p {
+    font-size: 1.8rem;
+    line-height: 2.1 rem;
+  }
+  about-social a {
+    font-size: 4rem;
+  }
+  .nav-bar {
+    justify-content: space-between;
+    padding: 2rem 2rem;
+    line-height: 1 rem;
+  }
+  .nav-menu {
+    width: auto;
+    justify-self: end;
+  }
+  .top-nav {
+    width: 100%;
   }
 }
